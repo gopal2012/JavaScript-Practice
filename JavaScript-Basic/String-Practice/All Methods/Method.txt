@@ -4,12 +4,12 @@ In JavaScript, some important string methods that are often discussed in intervi
 2.concat(): Combines two or more strings.
 3.includes(): Checks if a string contains a specified value.
 4.indexOf(): Returns the index of the first occurrence of a value in a string.
-5.lastIndexOf()**: Returns the index of the last occurrence of a value in a string.
+5.lastIndexOf(): Returns the index of the last occurrence of a value in a string.
 6.match(): Searches a string for a match against a regular expression and returns the matches.
 7.replace(): Searches for a match in a string and replaces it with another value.
 8.slice(): Extracts a part of a string and returns it as a new string.
 9.split(): Splits a string into an array of substrings based on a separator.
 10.substring(): Returns the part of the string between start and end indexes.
-11.toLowerCase()**: Converts a string to lowercase letters.
-12.toUpperCase()**: Converts a string to uppercase letters.
+11.toLowerCase(): Converts a string to lowercase letters.
+12.toUpperCase(): Converts a string to uppercase letters.
 13.trim(): Removes whitespace from both ends of a string.
