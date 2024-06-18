@@ -17,8 +17,8 @@
 //--------------------------------------------------------
 
 //1.Basic Usage:
-// const sentence = "The quick brown fox jumps over the lazy dog";
-// const word = "fox";
+const sentence = "The quick brown fox jumps over the lazy dog";
+const word = "fox";
 
 
 

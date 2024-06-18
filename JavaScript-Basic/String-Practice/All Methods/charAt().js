@@ -24,17 +24,20 @@
 
 // 4. How would you use `charAt` to check if the third character in a string is a vowel?
 
-// let exmp = "i am a boy";
-// let vowel = ["a", "e" , "i" , "o" , "u"];
-//   let y;
-//     for(let i = 0 ; i < 5 ; i++) {
-//         if (exmp.charAt(3) == vowel) {
-//             y = 1;
-//         }
-//     }
-//     if (y = 1) {
-//         console.log("This character is vowel");
-//     }
-//     else {
-//         console.log("This character is not vowel");
-//     }
+let exmp = "i cm a boy";
+let vowel = ["a", "e" , "i" , "o" , "u"];
+  let y;
+    for(let i = 0 ; i < 5 ; i++) {
+        
+        if (exmp.charAt(3) === vowel[i]) {
+            y = 1;
+            break;
+        }
+        
+    }
+    if (y == 1) {
+        console.log("This character is vowel");
+    }
+    else {
+        console.log("This character is not vowel");
+    }
