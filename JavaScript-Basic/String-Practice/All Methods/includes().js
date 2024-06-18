@@ -17,14 +17,15 @@
 //--------------------------------------------------------
 
 //1.Basic Usage:
-const sentence = "The quick brown fox jumps over the lazy dog";
-const word = "fox";
-
+// const sentence = "The quick brown fox jumps over the lazy dog";
+// const word = "fox";
+// console.log(sentence.includes(word));
 
 
 //2.Case Sensitivity:
 // const str = "JavaScript";
 // const substr = "script";
+// console.log(str.includes(substr)); //false
 
 
 //3.Check for Empty String:
