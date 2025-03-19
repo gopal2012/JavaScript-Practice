@@ -23,7 +23,7 @@
 
     <script>
             form = document.getElementById("formData");
-            form.addEventListener("submit", getdata());
+            form.addEventListener("submit", getdata);
 
             
 
@@ -32,10 +32,10 @@
             event.preventDefault();
 
 
-            let name = getElementById("name").value;
-            let Course = getElementById("Course").value;
-            let dob = getElementById("DOB").value;
-            let languages = getElementById("languages").value;
+            let name = document.getElementById("name").value;
+            let Course = document.getElementById("Course").value;
+            let dob = document.getElementById("DOB").value;
+            let languages = document.getElementById("languages").value;
 
             document.getElementById("showData").innerHTML = `
                  <p><strong>Name:</strong> ${name}</p>
@@ -44,16 +44,10 @@
                  <p><strong>Language:</strong> ${languages}</p>
                  
                  `;
-
-
-
-
-
-
             }
            
 
-        }
+        
     </script>
 </body>
 </html>
