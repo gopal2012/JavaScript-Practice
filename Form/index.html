@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form id="formData">
+
+    <labelfor="name">Name:</label><input type="text" id="name"><br>
+    <label for="Course">Course:</label><input type="text" id="Course"><br>
+    <lebel for="DOB">DOB:</lebel><input type="date" id="DOB"><br>
+    <select id="languages" name="languages">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+    </select><br>
+    <input type="submit">
+
+    <div id="showData"></div>
+    </form>
+
+    <script>
+            form = document.getElementById("formData");
+            form.addEventListener("submit", getdata());
+
+            
+
+            function getdata(event){
+
+            event.preventDefault();
+
+
+            let name = getElementById("name").value;
+            let Course = getElementById("Course").value;
+            let dob = getElementById("DOB").value;
+            let languages = getElementById("languages").value;
+
+            document.getElementById("showData").innerHTML = `
+                 <p><strong>Name:</strong> ${name}</p>
+                 <p><strong>Course:</strong> ${Course}</p>
+                 <p><strong>Dob:</strong> ${dob}</p>
+                 <p><strong>Language:</strong> ${languages}</p>
+                 
+                 `;
+
+
+
+
+
+
+            }
+           
+
+        }
+    </script>
+</body>
+</html>
