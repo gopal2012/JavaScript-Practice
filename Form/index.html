@@ -7,19 +7,48 @@
 </head>
 <body>
     <form id="formData">
+    <table border="1px solid black">
+    <tr><th>Field</th> <th>Value</th></tr>
 
-    <labelfor="name">Name:</label><input type="text" id="name"><br>
-    <label for="Course">Course:</label><input type="text" id="Course"><br>
-    <lebel for="DOB">DOB:</lebel><input type="date" id="DOB"><br>
-    <select id="languages" name="languages">
-        <option value="python">Python</option>
-        <option value="java">Java</option>
-        <option value="c++">C++</option>
-    </select><br>
-    <input type="submit">
+    <tr>
+        <th><labelfor="name">Name:</label></th>
+         <th><input type="text" id="name"></th>
+    </tr>
+    
+    <tr>
+        <td><label for="Course">Course:</label></td> 
+        <td><input type="text" id="Course"></td>
+    </tr>
+    
+    <tr>
+        <td><lebel for="DOB">DOB:</lebel></td>
+        <td><input type="date" id="DOB"></td>
+    </tr>
+
+    <tr>
+        <td>
+            <lebel for="languages">Select language:</lebel>
+        </td>
+        <td>
+            <select id="languages" name="languages">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit">
+        </td>
+        
+    </tr>
+    </table>
+    
 
     <div id="showData"></div>
     </form>
+    
 
     <script>
             form = document.getElementById("formData");
@@ -38,6 +67,7 @@
             let languages = document.getElementById("languages").value;
 
             document.getElementById("showData").innerHTML = `
+
                  <p><strong>Name:</strong> ${name}</p>
                  <p><strong>Course:</strong> ${Course}</p>
                  <p><strong>Dob:</strong> ${dob}</p>
